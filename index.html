@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Furniture Site</title>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <!-- google fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+</head>
+
+<body style="font-family: 'Poppins', sans-serif;">
+
+    <!-- header -->
+    <nav class="navbar" style="background-color: #041a2e ;">
+        <div class="container-fluid">
+            <a class="navbar-brand text-light" href="#">
+                <i class="fa-solid fa-couch" style="color: #ffffff;"></i>
+                FURITURE SITE
+            </a>
+        </div>
+    </nav>
+    <!-- banner -->
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img height="680px" src="https://img.freepik.com/free-vector/flat-furniture-sale-banner-with-photo_23-2148926442.jpg?w=2000"
+                    class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img height="680px" src="https://img.freepik.com/free-vector/flat-furniture-sale-banner-with-photo_23-2148922708.jpg" class="d-block w-100"
+                    alt="...">
+            </div>
+            <div class="carousel-item">
+                <img height="680px" src="https://img.freepik.com/free-vector/furniture-sale-banner-template_23-2148923495.jpg?w=2000"
+                    class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- main cards -->
+    <div class="row m-5">
+        <div class="col-4">
+            <div class="card m-3" >
+                <img style="height: 200px;width: 395px;margin: 10px;" src="data:image/jpeg;base64,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" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Plum Green Sofa</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card m-3" >
+                <img style="height: 200px;width: 395px;margin: 10px;" src="https://mysleepyhead.com/media/catalog/product/3/_/3_seater_mojo_yellow_sofa_price.jpg?optimize=medium&bg-color=255%2C255%2C255&fit=cover&height=375&width=840&auto=webp&format=pjpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Lite Yellow Couch</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-4">
+            <div class="card m-3">
+                <img style="height: 200px;width: 395px;margin: 10px;" src="https://www.ulcdn.net/images/products/817049/original/FVSTBG53RD10628_LP.jpg?1684913555" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Cherry Red Bean-Bag</h5>
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                        card's content.</p>
+                    <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <section class="">
+        <!-- Footer -->
+        <footer class="text-center text-white" style="background-color: #041a2e;">
+          <!-- Grid container -->
+          <div class="container p-4 pb-0">
+            <!-- Section: CTA -->
+            <section class="">
+              <p class="d-flex justify-content-center align-items-center">
+                <span class="me-3">Register for free</span>
+                <button type="button" class="btn btn-outline-light btn-rounded">
+                  Sign up!
+                </button>
+              </p>
+            </section>
+            <!-- Section: CTA -->
+          </div>
+          <!-- Grid container -->
+      
+          <!-- Copyright -->
+          <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2020 Copyright:
+            <a class="text-white" href="https://mdbootstrap.com/">Furnituresite.com</a>
+          </div>
+          <!-- Copyright -->
+        </footer>
+        <!-- Footer -->
+      </section>
+
+</body>
+
+</html>
